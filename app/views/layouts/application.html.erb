@@ -4,9 +4,13 @@
     <title>AppFinal</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
   </head>
 
   <body>
@@ -14,6 +18,7 @@
        <ul>
           <li><%= link_to 'home', root_path %></li>
            <li><%= link_to 'users (admin)', users_path %></li>
+            <li><%= link_to 'Store', products_path %></li>
           <li><%= link_to 'about us', about_us_path %></li>
           <li><%= link_to 'contact', contact_path %></li>
        </ul>
@@ -27,5 +32,9 @@
         <li><%= link_to 'social networks', legal_social_networks_path %></li>
       </ul>
     </footer>
+    
+    <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="MjU3MzUwYWEtZTk0Mi00NGIzLTg0ODktNDAyY2QwMjI2MzEwNjM3NTg1Mzk3MjA4MTYxOTQx"></div>
+    
   </body>
 </html>
