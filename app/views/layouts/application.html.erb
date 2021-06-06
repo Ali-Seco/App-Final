@@ -11,11 +11,13 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+   
   </head>
 
   <body>
+    <H3><strong><font color="black">MENU:</font></strong></H3> 
     <nav>
-       <ul>
+      <ul>
           <li><%= link_to 'home', root_path %></li>
            <li><%= link_to 'users (admin)', users_path %></li>
             <li><%= link_to 'Store', products_path %></li>
@@ -23,6 +25,7 @@
           <li><%= link_to 'contact', contact_path %></li>
        </ul>
     </nav>
+    <br>
     <%= yield %>
     <footer>
       <ul>

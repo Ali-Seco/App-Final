@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Products</h1>
+<br>
+<h1>PRODUCTS</h1>
 
 <table>
   <thead>
     <tr>
       <th></th>
-      <th>Name</th>
-      <th>Sku</th>
-      <th>Price</th>
-      <th>Description</th>
+      <th><u>Name</u></th>
+      <th><u>Sku</u></th>
+      <th><u>Price</u></th>
+      <th><u>Description</u></th>
       <th></th>
       <th colspan="3"></th>
     </tr>
@@ -35,7 +35,7 @@
             data-item-description="<%= product.description %>"
             data-item-image="<%= url_for(product.picture) %>"
             data-item-name="<%= product.name %>">
-            Add to cart
+           <font color="red"><strong> Add to cart</strong></font>
           </button>
         </td>
         <td><%= link_to 'Show', product %></td>
